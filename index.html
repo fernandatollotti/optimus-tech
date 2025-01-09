@@ -8,9 +8,63 @@
     <!-- favicon -->
     <link rel="shortcut icon" href="assets/images/favicon.png" type="image/png">
 
+     <!-- phosphor icons -->
+     <script src="https://unpkg.com/@phosphor-icons/web@2.1.1"></script>
+
+     <!-- css -->
+     <link rel="stylesheet" href="assets/styles/main.css">
+
     <title>Optimus Tech</title>
   </head>
-  <body>
-    
+  <body data-theme="light">
+    <!-- header -->
+    <header class="header">
+      <!-- button to toggle open/close the navigation menu -->
+      <div class="header__toggle">
+        <button class="btn-icon" btn-toggle>
+          <i class="ph ph-squares-four"></i>
+        </button>
+      </div>
+
+      <!-- logo -->
+      <div class="header__logo">
+        <a href="/">
+          <img src="assets/images/logo.png" alt="Logo da Optimus Tech" title="Optimus Tech"> 
+        </a>
+      </div>
+
+      <!-- navigation menu -->
+      <nav class="navbar" sidebar-open>
+        <ul class="menu">
+          <li class="menu__item">
+            <a href="" class="menu__link">Home</a>
+          </li>
+          <li class="menu__item">
+            <a href="" class="menu__link">Recursos</a>
+          </li>
+          <li class="menu__item">
+            <a href="" class="menu__link">Produtos</a>
+          </li>
+          <li class="menu__item">
+            <a href="" class="menu__link">Sobre nós</a>
+          </li>
+        </ul>
+
+        <div class="menu__buttons">
+          <button class="btn btn--link">Entrar</button>
+          <button class="btn btn--primary">Cadastrar</button>
+        </div>
+      </nav>
+
+      <!-- button to toggle light and dark -->
+      <div class="header__icon-container">
+        <button class="btn-icon" data-theme-btn>
+          <i class="ph ph-moon"></i>
+        </button>
+      </div>
+    </header>
+
+    <!-- js -->
+    <script src="assets/scripts/main.js"></script>
   </body>
 </html>
