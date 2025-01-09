@@ -52,8 +52,6 @@
 }
 
 /* ====== section about ====== */
-.about {max-height: 100vh;}
-
 .about__content {padding-bottom: 5rem;}
 
 .about__metrics {
@@ -193,7 +191,7 @@
     margin: 0 auto;
   }
 
-  .form .input {width: 360px;}
+   .form .input {width: 360px;}
 }
 
 @media (max-width: 992px) {
