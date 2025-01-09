@@ -1,0 +1,118 @@
+/* ====== fonts ====== */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+/* ====== variables ====== */
+:root, [data-theme="light"] {
+ /* colors */
+ --primary-color: #667085;
+ --secondary-color: #101828;
+ --accent-color: #8E2424;
+ --accent-hover: #7d1616;
+ --text-color: #98A2B3;
+ --border-color: #EAECF0;
+ --surface-color: #FFFFFF;
+ --bg-color: #F9FAFB;
+ --bg-subtitle-color: rgba(142, 36, 36, 0.051);
+ --bg-section-color: rgba(195, 25, 25, 0.031);
+
+ /* font size */
+ --fs-base: 1rem;
+ --fs-small: 0.875rem;
+ --fs-regular: 1.125rem;
+ --fs-medium: 1.25rem;
+ --fs-large: 2.25rem;
+ --fs-extra-large: 3rem;
+ --fs-display: 3.75rem;
+
+ /* line height */
+ --lh-base: 1.5rem;   
+ --lh-small: 1.25rem;
+ --lh-regular: 1.75rem;     
+ --lh-medium: 1.875rem;
+ --lh-large: 2.75rem; 
+ --lh-extra-large: 3.75rem;
+ --lh-display: 4.5rem;
+
+ /* font weight */
+ --fw-regular: 400;
+ --fw-medium: 500;
+ --fw-bold: 600; 
+}
+
+[data-theme="dark"] {
+  --primary-color: #B0B3B8;
+  --secondary-color: #F2F4F7;
+  --accent-color: #E84D4D;
+  --accent-hover: #B63E3E;
+  --text-color: #B0B3B8;
+  --border-color: #4A4A4A;
+  --surface-color: #242526;
+  --bg-color: #18191A;
+  --bg-subtitle-color: rgba(232, 77, 77, 0.1);
+  --bg-section-color: rgba(44, 44, 44, 0.8);
+}
+
+/* ====== base styles ====== */
+body {
+  font-size: var(--fs-base);
+  line-height: var(--lh-base);
+  font-family: 'Inter', sans-serif;
+  background-color: var(--surface-color);
+}
+
+span {display: block;}
+
+img {max-width: 100%;}
+
+input {
+  width: 100%;
+  border: 1px solid var(--border-color);
+}
+
+/* typography */
+h1, h2, h3, h4 {color: var(--secondary-color);}
+
+h1, h2 {
+  font-weight: var(--fw-bold);
+  padding-bottom: 1.5rem;
+  letter-spacing: -2%;
+}
+
+h3, h4 {
+  font-weight: var(--fw-medium);
+  padding-bottom: 2rem;
+}
+
+h1 {
+  font-size: var(--fs-extra-large);
+  line-height: var(--lh-extra-large);
+}
+
+h2 {
+  font-size: var(--fs-large);
+  line-height: var(--lh-large);
+}
+
+h3 {
+  font-size: var(--fs-medium);
+  line-height: var(--lh-medium);
+}
+
+h4 {
+  font-size: var(--fs-regular);
+  line-height: var(--lh-regular);
+}
+
+p {
+  color: var(--primary-color);
+  font-size: var(--fs-medium);
+  line-height: var(--lh-medium);
+  font-weight: var(--fw-regular);
+}
+
+.subheading {
+  color: var(--accent-color);
+  font-weight: var(--fw-bold);
+  line-height: var(--lh-base);
+  padding-bottom: 1rem;
+}
