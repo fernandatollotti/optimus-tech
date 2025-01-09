@@ -73,6 +73,11 @@ input {
   border: 1px solid var(--border-color);
 }
 
+section {margin-top: 6rem;}
+
+.header,
+.main-content {padding: 1rem;}
+
 /* typography */
 h1, h2, h3, h4 {color: var(--secondary-color);}
 
