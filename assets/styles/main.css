@@ -42,14 +42,17 @@
 /* ====== main ====== */
 .main-content {padding-top: 5rem;}
 
-/* ====== section about ======= */
-.about {
+/* ====== sections ====== */
+.about,
+.jobs__content {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  max-height: 100vh;
 }
+
+/* ====== section about ====== */
+.about {max-height: 100vh;}
 
 .about__content {padding-bottom: 5rem;}
 
@@ -83,6 +86,49 @@
   font-weight: var(--fs-regular);
 }
 
+/* ====== section jobst ====== */
+.badge {
+  color: var(--accent-color);
+  font-size: var(--fs-small);
+  line-height: var(--lh-small);
+  font-weight: var(--fw-medium);
+  padding: 0.25rem 0.75rem;
+  border-radius: 1.563rem;
+  margin-bottom: 1rem;
+  background-color: var(--bg-subtitle-color);
+}
+
+.image {padding: 4rem 0;}
+
+.jobs__container {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.card {
+  border-radius: 1rem;
+  padding: 1.5rem;
+  border: 1px solid var(--border-color);
+}
+
+.card__list {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.card__list .card__item {
+  color: var(--primary-color);
+  font-weight: var(--fw-medium);
+  line-height: var(--lh-base);
+}
+
 /* ====== media queries ====== */
 @media (min-width: 992px) {
   .header {padding: 1.125rem 5rem;}
@@ -90,6 +136,11 @@
   .main-content {padding: 6rem 5rem;}
 
   .about__content {width: 70%;}
+  
+  .jobs__container {
+    width: 50%;
+    margin: 0 auto;
+  }
 }
 
 @media (max-width: 992px) {
@@ -105,7 +156,6 @@
 }
 
 @media (max-width: 876px) {
-  /* ====== header ====== */
   .header__toggle {display: block;}
 
   .header__logo {text-align: center;}
