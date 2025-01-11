@@ -207,7 +207,10 @@
 }
 
 @media (max-width: 876px) {
-  .header__toggle {display: block;}
+  .header__toggle {
+    display: block;
+    margin-right: 2.5rem;
+  }
 
   .header__logo {text-align: center;}
 
